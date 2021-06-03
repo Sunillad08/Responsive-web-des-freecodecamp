@@ -1,125 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./survey-form.css" />
-  </head>
 
-  <body>
-    <main>
-      <header>
-        <h1 id="title">Coding Survey Form</h1>
-        <p id="description">
-          Survey to know about your coding journey and exprience!
-        </p>
-      </header>
-        <form id="survey">
-          <p id="name-label" class='help-title'>Name :<span style='color:red;'>*</span></p>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-          <p id="email-label" class='help-title'>Email :<span style='color:red;'>*</span></p>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-          <p id="number-label" class='help-title'>Number of Programming languages You know :<span style='color:red;'>*</span></p>
-          <input
-            type="number"
-            name="age"
-            id="number"
-            placeholder="Enter number"
-            min="0"
-            max="20"
-            required
-          />
-          <p class='help-title'>Favourite Programming Language :<span style='color:red;'>*</span></p>
-          <select name="lang" id="dropdown" required>
-            <option value="none" selected>None</option>
-            <option value="python">Python</option>
-            <option value="javascript">JavaScript</option>
-            <option value="java">Java</option>
-            <option value="c++">C++</option>
-            <option value="c#">C#</option>
-            <option value="other">Other</option>
-          </select>
-          <p class='help-title'>Currently working as :</p>
-          <label>
-            <input
-              type="radio"
-              name="profession"
-              id="work"
-              value="Student"
-            />Student
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="profession" id="work" />Programmer
-          </label>
-          <br>
-          <label>
-            <input
-              type="radio"
-              name="profession"
-              id="work"
-              value="dev"
-            />Developer
-          </label>
-          <br>
-          <label>
-            <input
-              type="radio"
-              name="profession"
-              id="work"
-              value="freelancer"
-            />Freelancer
-          </label>
-          <br>
-          <label>
-            <input
-              type="radio"
-              name="profession"
-              id="work"
-              value="other"
-            />Other
-          </label>
-          <p class='help-title'>Would like to be : (can select multiple)</p>
-          <label
-            ><input type="checkbox" name="future-job" value="prgrammer" />Programmer</label
-          >
-          <br>
-          <label
-            ><input type="checkbox" name="future-job" value="data-anal" />Data analyst</label
-          >
-          <br>
-          <label
-            ><input type="checkbox" name="future-job" value="ml" />Automation</label
-          >
-          <br>
-          <label
-            ><input type="checkbox" name="future-job" value="web-dev" />Web Developer</label
-          >
-          <br>
-          <label
-            ><input type="checkbox" name="future-job" value="it" />IT Industry</label
-          >
-          <p>Any suggestions ?</p>
-          <textarea name="feedback" id="feedback" cols="70" rows="10"></textarea>
-          <br>
-          <br>
-       <button type="submit" id='submit'>Submit</button>
-      </form>
-      
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./survey-form.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">Coding Survey Form</h1>
+      <p id="description">
+        Survey to know about your coding journey and exprience!
+      </p>
+    </header>
+    <form id="survey">
+      <p id="name-label" class="help-title">
+        Name :<span style="color: red">*</span>
+      </p>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required />
+      <p id="email-label" class="help-title">
+        Email :<span style="color: red">*</span>
+      </p>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required />
+      <p id="number-label" class="help-title">
+        Number of Programming languages You know :<span style="color: red">*</span>
+      </p>
+      <input type="number" name="age" id="number" placeholder="Enter number" min="0" max="20" required />
+      <p class="help-title">
+        Favourite Programming Language :<span style="color: red">*</span>
+      </p>
+      <select name="lang" id="dropdown" required>
+        <option value="none" selected>None</option>
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="c++">C++</option>
+        <option value="c#">C#</option>
+        <option value="other">Other</option>
+      </select>
+      <p class="help-title">Currently working as :</p>
+      <label>
+        <input type="radio" name="profession" id="work" value="Student" />Student
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="profession" id="work" />Programmer
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="profession" id="work" value="dev" />Developer
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="profession" id="work" value="freelancer" />Freelancer
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="profession" id="work" value="other" />Other
+      </label>
+      <p class="help-title">Would like to be : (can select multiple)</p>
+      <label><input type="checkbox" name="future-job" value="prgrammer" />Programmer</label>
+      <br />
+      <label><input type="checkbox" name="future-job" value="data-anal" />Data
+        analyst</label>
+      <br />
+      <label><input type="checkbox" name="future-job" value="ml" />Automation</label>
+      <br />
+      <label><input type="checkbox" name="future-job" value="web-dev" />Web
+        Developer</label>
+      <br />
+      <label><input type="checkbox" name="future-job" value="it" />IT
+        Industry</label>
+      <p>Any suggestions ?</p>
+      <textarea name="feedback" id="feedback" cols="70" rows="10"></textarea>
+      <br />
+      <br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
 </html>
