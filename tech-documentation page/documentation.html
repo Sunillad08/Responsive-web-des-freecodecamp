@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation of Python</title>
+    <link rel="stylesheet" href="./documentation.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <header>
+            <img src="https://i.pinimg.com/originals/91/94/c9/9194c978fa63798b2e882e6fda5eb953.png" alt="python logo" width='15'> Python Documentation</header>
+        <ul>
+            <li class='topic-title'><a href="#What-is-python">What is Python?</a> </li>
+            <li class='topic-title'><a href="#Input-and-Output">Input and Output</a> </li>
+            <li class='topic-title'><a href="#Comments">Comments</a></li>
+            <li class='topic-title'><a href="#If-else">If else</a></li>
+            <li class='topic-title' ><a href="#For-loop">For loop</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="What-is-python">
+            <header>What is Python ?</header>
+            <p>Python is programming language. Python is high level easy to type , easy to learn language. Python is not strictly typed and python code is generally smaller in terms of lines.</p>
+            <p>Features of Python:</p>
+            <ul>
+                <li>High-level programming language: With Python, the code looks very close to how humans think. For this purpose, it must abstract the details of the computer from you: memory management, pointers,… Hence, it is slower than “lower-level language” like C;</li>
+                <br>
+                <li>Python is interpreted and not compiled: Sure, this statement is a gross simplification but it’s somehow correct. During the execution, Python code is interpreted at runtime instead of being compiled to native code at compile time;</li>
+                <br>
+                <li>Python is a dynamically typed language: Unlike “statically-typed” languages like C, C++ or Java, you don’t have to declare the variable type like String, boolean or int. The less you do, the more your computer has to work. For each attribute access, tons of lookup is required. In addition, being very dynamic makes it incredibly hard to optimize Python;</li>
+                <br>
+                <li>Global Interpreter Lock (GIL): This GIL basically prevents multi-threading by mandating the interpreter only execute a single thread within a single process (an instance of the Python interpreter) at a time.</li>
+                <br>
+                <li>More Productive:First and foremost reason why Python is much popular because it is highly productive as compared to other programming languages like C++ and Java. It is much more concise and expressive language and requires less time, effort, and lines of code to perform the same operations.</li>
+            </ul>
+            
+            <p>In python we do not use {} brackets to describe scope , instead we use intendation for making block of code.</p>
+            <p class='code-title'>Let's see basic syntax of python:</p>
+            <code>def welcome(name): <br>
+            <pre>   print('Welcome' + name)</pre> 
+            </code>
+            <p style='font-style: italic;'>*Note : This part will be explained in future documentation.</p>
+        
+        </section>
+        <section class="main-section" id="Input-and-Output">
+            <header>Input and Output</header>
+            <p>Let's see how to do basic input and output in python :</p>
+            <p>While coding we need to display output and take input from user.In python we use <code style='display:inline;background-color: inherit;'>input()</code> for taking input and <code style='display:inline;background-color: inherit;'>print()</code>for displaying output.</p>
+            <p class='code-title'>Taking input and displaying output:</p>
+            <code>print("This line will be printed in terminal!") <br>
+                name = input('Enter your name :') <br>
+                print('Hello' + name)
+            </code>
+        </section>
+        <section class="main-section" id="Comments">
+            <header >Comments</header>
+            <p>While writing code , we generally need to write explanation for code or notes or messages for other programmers.Also sometimes we need to block some part for code for execution. Basically comments are block of codes which are ignored while running code.
+            </p>
+            <p class='code-title'>Writing comments :</p>
+            <code>#This is comments. Lines starting with hash are treated as comments in python<br> <br>
+            '''Multiline comments are writtenin  tripple quotes. <br> Actually they are strings but they can be used as multiline comments.<br>
+            Tripple quotes are also used for documentation in python code'''</code>
+        </section>
+        <section class="main-section" id="If-else">
+            <header >If else</header>
+            <p>In programming we need to use conditional jumps for program execution. We can use if-else block for that. We can also use if-elif-else or nested if-else too!</p>
+            <p class='code-title'>If else statement in python :</p>
+            <code>#if else <br> 
+                if name=='python':
+                <pre>   print('Its python!')</pre>
+                else:
+                <pre>   print('Its not python!)</pre>
+                <br><br>
+
+                #if-elif-else <br>
+                if i=='a':
+                <pre>   print('Its a')</pre>
+                elif i=='b':
+                <pre>   print('Its b')</pre>
+                else:
+                <pre>   print('anything but not a and b')</pre>
+                <br><br>
+
+                #nested if-else <br>
+                if number>10:
+                <pre>   if number>5</pre>
+                <pre>       print('Number is smaller than 5')</pre>
+                <pre>   else:</pre>
+                <pre>       print('Number is greater that 5')</pre>
+                else: 
+                <pre>   print('Number is greater than 10!')</pre>
+            </code>
+        </section>
+        <section class="main-section" id="For-loop">
+            <header >For loop</header>
+            <p>When we need to perform a task over and over we use for loop. We can specify how many times block of code should run.</p>
+            <p class='code-title'>for loop in python:</p>
+            <code>
+                # for loop that prints 1 to 10 <br>
+                for i in range(1,10):
+                <pre>   print(i)</pre>
+            </code>
+        </section>
+    </main>
+</body>
+</html>
